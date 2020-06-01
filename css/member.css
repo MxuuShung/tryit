@@ -1,0 +1,955 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700&display=swap");
+
+*{
+    font-family: "Noto Sans TC",sans-serif;
+    font-weight: 300 ;
+    letter-spacing: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    font-weight: 300 ;
+}
+a,
+a:hover{
+    color: #0080ff;
+}
+::placeholder {
+    color: gray;
+    font-size: 1rem;
+}
+span{
+    color: #f92412;
+    line-height: none;
+}
+
+/* login.php css Start */
+.MG-login-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-row{
+    width: 100%;
+    height: 100%;
+}
+.MG-login-box{
+    min-width: 540px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-login-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-login-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 15px;
+    font-weight: 500;
+}
+.MG-login-box-title-right{
+    width: 125px;
+}
+.MG-login-box-title-right > a > img{
+    width: 125px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-login-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-login-line{
+    margin-right: 145px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-login-line > p{
+    font-size: 0.9rem;
+}
+.MG-login-line > p > a{
+    font-size: 1rem;
+}
+.MG-login-line-bottom{
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-login-box-body-input{
+    position: relative;
+    width: 100%;
+}
+.MG-login-box-body-input > label{
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    text-shadow: rgb(105, 104, 104) 0.5px 0.5px 0px;
+}
+.MG-login-box-body-input > input{
+    border: 0px;
+    color: black;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom:1px solid gray;
+    width: 100%;
+}
+.MG-login-box-body-input > input:hover,
+.MG-login-box-body-input > input:focus{
+    border-bottom:1px solid #0080ff;
+    bottom: 0;
+    transition: 1.2s;
+    outline: 0;
+}
+.MG-login-password-eye{
+    position: absolute;
+    bottom:10px;
+    right: 0px;
+    padding: 0;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    z-index: 12;
+}
+.MG-login-box-body-button > input{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 150px;
+    outline: 0;
+}
+.MG-login-box-body-button > input:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+.MG-login-box-body-button > a{
+    margin-left: 3%;
+}
+.MG-login-box-body-footer-other{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-login-box-body-footer-other > span{
+    line-height: 45px;
+    color: black;
+}
+.MG-login-box-body-footer-other-line{
+    width: 65%;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-login-box-footer-other-img > a > img{
+    width: 35px;
+    height: 35px;
+}
+
+
+/* login.php css End */
+
+/* add_email.php css Start*/
+/*.MG-add-email-background
+    width: 100%;
+    height: 100%;
+    background:url("../image/member/member-login.jpg") no-repeat center;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover;
+    -moz-background-size: cover;
+    position: absolute;
+    overflow: hidden;
+    color: black;
+    z-index: -1;
+*/
+.MG-add-email-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-add-email-box{
+    min-width: 625px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-add-email-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-add-email-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.MG-add-email-box-title-right{
+    width: 95px;
+}
+.MG-add-email-box-title-right > a > img{
+    width: 95px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-add-email-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-add-email-line{
+    margin-right: 125px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-add-email-box-body > label{
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    text-shadow: rgb(158, 150, 150) 0.5px 0.5px 0px;
+}
+.MG-add-email-box-body > input{
+    border: 0px;
+    color: black;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom:1px solid gray;
+    min-width: 100%;
+    max-width: 100%;
+    outline: 0;
+}
+
+.MG-add-email-box-body > input:hover,
+.MG-add-email-box-body > input:focus{
+    border-bottom:1px solid #0080ff;
+    bottom: 0;
+    transition: 1.2s;
+    outline: 0;
+}
+.MG-add-email-box-footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.MG-add-email-box-footer-right > input{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 150px;
+    margin-bottom: 1rem;
+}
+.MG-add-email-box-footer-right > input:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+/*add start*/
+
+.MG-add-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-add-box{
+    width: auto;
+    min-width: 720px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2.25%;
+    border-radius: 3px;
+}
+.MG-add-box-title{
+    display: inline-flex;
+}
+.MG-member-line{
+    margin-right: 24%;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-member-line-bottom{
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-add-box-title-left > h1{
+    font-size: 2.5em;
+    min-width: 100px;
+    letter-spacing: 15px;
+    font-weight: 500;
+}
+.MG-add-box-title-right{
+    width: 125px;
+}
+.MG-add-box-title-right > a > img{
+    width: 125px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-add-box-title-right > a > img:hover{
+    transition: 0.6s;
+    opacity: 1;
+}
+.MG-add-box-body-name{
+    width: 100%;
+}
+.MG-add-box-body-password{
+    width: 100%;
+}
+.MG-add-box-body-other{
+    width: 100%;
+}
+.MG-add-box-body-col{
+    max-width: 300px;
+    min-width: 300px;
+}
+.MG-add-box-body-col-input{
+    width: 100%;
+    position: relative;
+}
+.MG-add-box-body-col-input > label{
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    text-shadow: rgb(158, 150, 150) 0.5px 0.5px 0px;
+}
+.MG-add-box-body-col-input > input,select{
+    border: 0px;
+    color: black;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom:1px solid gray;
+    min-width: 100%;
+    max-width: 100%;
+    outline: 0;
+}
+.MG-add-box-body-col-input > input:hover,
+.MG-add-box-body-col-input > select:hover{
+    border-bottom:1px solid #0080ff;
+    transition: 1.2s;
+}
+.MG-add-box-body-col-input > input:focus,
+.MG-add-box-body-col-input > select:focus{
+    border-bottom:1px solid #0080ff;
+    transition: 1.2s;
+}
+.MG-add-box-footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.MG-add-box-footer-input-submit{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 150px;
+}
+.MG-add-box-footer-input-submit:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+.MG-add-password-eye{
+    position: absolute;
+    top:45%;
+    right: 0px;
+    padding: 0;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    z-index: 12;
+}
+/* forget-password.php start*/
+.MG-forget-password-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-forget-password-box{
+    min-width: 625px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-forget-password-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-forget-password-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.MG-forget-password-box-title-right{
+    width: 95px;
+}
+.MG-forget-password-box-title-right > a > img{
+    width: 95px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-forget-password-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-forget-password-line{
+    margin-right: 125px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-forget-password-box-body > label{
+    font-size: 1.2rem;
+    letter-spacing: 6px;
+    text-shadow: rgb(158, 150, 150) 0.5px 0.5px 0px;
+}
+.MG-forget-password-box-body > input{
+    border: 0px;
+    color: black;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom:1px solid gray;
+    min-width: 100%;
+    max-width: 100%;
+    outline: 0;
+}
+
+.MG-forget-password-box-body > input:hover,
+.MG-forget-password-box-body > input:focus{
+    border-bottom:1px solid #0080ff;
+    bottom: 0;
+    transition: 1.2s;
+    outline: 0;
+}
+.MG-forget-password-box-footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content:space-between;
+}
+.MG-forget-password-box-footer-sure > input{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 150px;
+    outline: 0; 
+    margin-bottom: 1rem;
+}
+.MG-forget-password-box-footer-sure > input:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+/*forget-password.php end*/
+
+/*forget_verification.php start*/
+.MG-forget-verification-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-forget-verification-box{
+    min-width: 625px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-forget-verification-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-forget-verification-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.MG-forget-verification-box-title-right{
+    width: 95px;
+}
+.MG-forget-verification-box-title-right > a > img{
+    width: 95px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-forget-verification-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-forget-verification-line{
+    margin-right: 125px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-forget-verification-box-body > label{
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    text-shadow: rgb(158, 150, 150) 0.5px 0.5px 0px;
+}
+.MG-forget-verification-box-body > input{
+    border: 0px;
+    color: black;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom:1px solid gray;
+    min-width: 100%;
+    max-width: 100%;
+    outline: 0;
+}
+
+.MG-forget-verification-box-body > input:hover,
+.MG-forget-verification-box-body > input:focus{
+    border-bottom:1px solid #0080ff;
+    bottom: 0;
+    transition: 1.2s;
+    outline: 0;
+}
+.MG-forget-verification-box-footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content:space-between;
+}
+.MG-forget-verification-box-footer-sure > input{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 150px;
+    outline: 0; 
+    margin-bottom: 1rem;
+}
+.MG-forget-verification-box-footer-sure > input:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+/*forget_verification.php end*/
+/*change_password.php start*/
+.MG-change-password-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-change-password-box{
+    min-width: 625px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-change-password-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-change-password-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.MG-change-password-box-title-right{
+    width: 95px;
+}
+.MG-change-password-box-title-right > a > img{
+    width: 95px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-change-password-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-change-password-line{
+    margin-right: 125px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-change-password-box-body{
+    width: 100%;
+}
+.MG-change-password-body-col-pull{
+    justify-content: space-between;
+}
+
+.MG-change-password-body-col-input{
+    width: 100%;
+    position: relative;
+}
+.MG-change-password-body-col-input > label{
+    font-size: 1.2rem;
+    letter-spacing: 10px;
+    text-shadow: rgb(158, 150, 150) 0.5px 0.5px 0px;
+}
+.MG-change-password-body-col-input > input{
+    border: 0px;
+    color: black;
+    font-size: 1.2rem;
+    background: none;
+    border-bottom:1px solid gray;
+    width: 100%;
+}
+.MG-change-password-body-col-input > input:hover{
+    border-bottom:1px solid #0080ff;
+    bottom: 0;
+    transition: 1.2s;
+    outline: 0;
+}
+.MG-change-password-body-col-input > input:focus{
+    border-bottom:1px solid #0080ff;
+    bottom: 0;
+    transition: 1.2s;
+    outline: 0;
+}
+.MG-change-password-box-footer{
+    width: 100%;
+    display:flex;
+    justify-content:flex-end;
+}
+.MG-change-password-box-footer-right > input{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 150px;
+    outline: 0; 
+    margin-bottom: 1rem;
+}
+.MG-change-password-box-footer-right > input:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+.MG-change-password-eye{
+    position: absolute;
+    top:45%;
+    right: 0px;
+    padding: 0 0 0 0;
+    background-color: transparent;
+    outline: 0;
+    cursor: pointer;
+    border: 0px solid transparent;
+    box-sizing: border-box;
+    z-index: 12;
+}
+/*change_password.php end*/
+/*remind.php start*/
+.MG-remind-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-remind-box{
+    max-width: 620px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-remind-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-remind-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.MG-remind-box-title-right{
+    width: 95px;
+}
+.MG-remind-box-title-right > a > img{
+    width: 95px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-remind-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-remind-line{
+    margin-right: 125px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-remind-box-body{
+    margin-right: 125px;
+}
+.MG-remind-box-body-font{
+    font-weight: 500;
+}
+/*remind.php end*/
+/*resend-miss-password.php start */
+.MG-resend-background{
+    width: 100%;
+    height: 100%;
+    background: url("../image/member/member-login1.jpg") no-repeat center; 
+    position: absolute;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -o-background-size: cover;
+    -ms-background-size:cover ;
+    -moz-background-size: cover;
+    overflow: hidden;
+}
+.MG-resend-box{
+    max-width: 620px;
+    background-color:rgb(238, 238, 238,0.9);
+    padding:2%;
+    border-radius: 3px;
+}
+.MG-resend-box-title{
+    width: 100%;
+    display: inline-flex;
+}
+.MG-resend-box-title-left > h1{
+    font-size: 2.5rem;
+    letter-spacing: 6px;
+    font-weight: 500;
+}
+.MG-resend-box-title-right{
+    width: 95px;
+}
+.MG-resend-box-title-right > a > img{
+    width: 95px;
+    opacity: 0.7;
+    position: absolute;
+}
+.MG-resend-box-title-right > a > img:hover{
+    opacity: 1;
+}
+.MG-resend-line{
+    margin-right: 125px;
+    border-top: 1px solid rgba(80, 80, 80, 0.8);
+}
+.MG-resend-box-body{
+    margin-right: 125px;
+}
+.MG-resend-box-footer{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-end;
+}
+.MG-resend-box-footer > button{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 95px;
+    outline: 0; 
+    margin-bottom: 1rem;
+}
+.MG-resend-box-footer > input{
+    background-color: #15497c; 
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    text-align:center;
+    border-radius: 5px;
+    padding:6px 0 3px 0;
+    min-width: 95px;
+    outline: 0; 
+    margin-bottom: 1rem;
+}
+.MG-resend-box-footer > button:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+.MG-resend-box-footer > input:hover{
+    transition: 0.6s;
+    background-color: #0080ff;
+}
+/*resend-miss-password.php end*/
+@media (max-width: 1024px) {
+    /*0.75;*/
+    .MG-member-line{
+        margin-right: 24%;
+    }
+    .MG-add-box{
+        min-width: 525px;
+        padding: 5%;
+    }
+    .MG-add-box-title-right{
+        width: 125px;
+    }
+    .MG-add-box-title-right > a >img{
+        width: 125px;
+    }
+    .MG-add-box-body-col{
+        max-width: 260px;
+        min-width: 260px;
+    }
+}
+@media (max-width: 767px) {
+    .MG-login-box{
+        min-width: 414px;
+        padding:3%;
+    }
+    .MG-add-background{
+        height: 1010px;
+    }
+    .MG-add-box{
+        min-width:100%;
+        top: 0;
+        background-color:rgb(238, 238, 238);
+    }
+    .MG-add-box-title-right{
+        width: 95px;
+    }
+    .MG-add-box-title-right > a >img{
+        width: 95px;
+    }
+    .MG-add-email-line{
+        margin-right: 95px;
+        border-top: 1px solid rgba(80, 80, 80, 0.8);
+    }
+    .MG-add-box-body-col{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .MG-member-line{
+        margin-right: 115px;
+        border-top: 1px solid rgba(80, 80, 80, 0.8);
+    }
+
+    /*注意 注意 注意*/
+    .MG-row{
+        display: block;
+    }
+    /*注意 注意 注意*/
+    
+    .MG-add-email-box{
+        min-width: 300px;
+        height: 100%;
+        padding: 5%;
+    }
+    .MG-remind-box {
+        max-width: none;
+        min-width: 375px;
+    }
+}
+@media (max-width: 414px) {
+    p{
+        font-size: 0.8rem;
+    }
+    a{
+        font-size: 0.9rem;
+    }
+    .MG-login-box{
+        min-width: 375px;
+        padding:5%;
+    }
+    .MG-login-box-title-right{
+        width: 95px;
+    }
+    .MG-login-box-title-right > a > img{
+        width: 95px;
+        opacity: 0.7;
+        position: absolute;
+    }
+    .MG-login-line{
+        margin-right: 125px;
+        border-top: 1px solid rgba(80, 80, 80, 0.8);
+    }
+}
+
+.container-fluid{
+    padding-left: 0% !important;
+    padding-right: 0 !important;
+}
+.row{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/*利用css優先級，取消input自動輸入框背景顏色*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+{
+-webkit-box-shadow:none; /*陰影蓋掉背景*/
+transition: background-color 5000s ease-in-out 0s; /*透明*/
+-webkit-text-fill-color: black; /*字體顏色*/
+}
+
+
+
+/*btnLine_style
+.btnLine {
+    background-image: linear-gradient(90deg, rgba(237, 240, 244, 0.7) 25%, #EEF1F5 50%, rgba(238,241,243,0.3) 85%);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    }
+.btnLine1{
+    background-image: linear-gradient(90deg,rgb(0, 0, 0,0.9) 0%,rgb(0, 0, 0,0.5) 15%,rgba(8, 79, 172, 0.5)  30%, rgba(46, 114, 204, 0.5) 45%,rgba(8, 79, 172, 0.5) 60%,rgb(0, 0, 0,0.7) 75%,rgb(0, 0, 0,0.9) 100%);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    }
+.btnLine2{
+    background-image: linear-gradient(90deg, rgba(237, 240, 244, 0.3) 0%, rgba(0,0,0,0.5) 25%,rgba(0,0,0,0.7) 50%,rgba(0,0,0,0.5) 75%, rgba(237, 240, 244, 0.3) 100%);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
+.btnLine3{
+    background-image: linear-gradient(90deg,rgb(0, 0, 0) 0%,rgb(0, 0, 0,0.7) 20%,rgb(0, 0, 0,0.5) 40%,rgb(0, 0, 0,0.3) 60%,rgb(0, 0, 0,0.1) 80%,#EEF1F5 95%);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    }
+.btnLine {
+    background-image: linear-gradient(90deg,#EEF1F5 0%,rgb(0, 0, 0.1) 10%,rgb(0, 0, 0,0.3) 25%,rgb(0, 0, 0,0.5) 40%,rgb(0, 0, 0,0.7) 60%,rgb(0, 0, 0,1) 80%,#EEF1F5 95%);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
+.btnLine4{
+    background-image: linear-gradient(90deg,#EEF1F5 5%,rgb(0, 0, 0,0.1) 20%,rgb(0, 0, 0,0.3) 40%,rgb(0, 0, 0,0.5) 60%,rgb(0, 0, 0,0.7) 80%,rgb(0, 0, 0,1) 100%);
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+}
